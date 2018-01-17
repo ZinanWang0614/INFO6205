@@ -4,7 +4,9 @@
 
 package edu.neu.coe.info6205.bqs;
 
+import edu.neu.coe.info6205.NotReadyTests;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import static org.junit.Assert.*;
 
@@ -13,6 +15,7 @@ public class BagTest {
     /**
      * Test method for Bag
      */
+    @Category(NotReadyTests.class)
     @Test
     public void testBag() {
         Bag<Integer> bag = new Bag_Array<>();

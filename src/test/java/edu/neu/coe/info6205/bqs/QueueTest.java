@@ -4,7 +4,9 @@
 
 package edu.neu.coe.info6205.bqs;
 
+import edu.neu.coe.info6205.NotReadyTests;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import static org.junit.Assert.*;
 
@@ -17,7 +19,7 @@ public class QueueTest {
         assertNull(queue.dequeue());
         assertTrue(queue.isEmpty());
     }
-
+    @Category(NotReadyTests.class)
     @Test
     public void testQueue1() {
         Queue<Integer> queue = new Queue_Elements<>();
@@ -27,7 +29,7 @@ public class QueueTest {
         assertEquals(queue.dequeue(), new Integer(1));
         assertTrue(queue.isEmpty());
     }
-
+    @Category(NotReadyTests.class)
     @Test
     public void testQueue2() {
         Queue<Integer> queue = new Queue_Elements<>();
@@ -39,7 +41,7 @@ public class QueueTest {
         assertEquals(queue.dequeue(), new Integer(2));
         assertTrue(queue.isEmpty());
     }
-
+    @Category(NotReadyTests.class)
     @Test
     public void testQueue3() {
         Queue<Integer> queue = new Queue_Elements<>();

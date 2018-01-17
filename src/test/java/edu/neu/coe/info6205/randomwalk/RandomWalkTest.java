@@ -4,7 +4,9 @@
 
 package edu.neu.coe.info6205.randomwalk;
 
+import edu.neu.coe.info6205.NotReadyTests;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import static org.junit.Assert.*;
 
@@ -12,6 +14,7 @@ public class RandomWalkTest {
 
     /**
      */
+    @Category(NotReadyTests.class)
     @Test
     public void testMove1() {
         RandomWalk rw = new RandomWalk();
@@ -27,6 +30,7 @@ public class RandomWalkTest {
 
     /**
      */
+    @Category(NotReadyTests.class)
     @Test
     public void testMove2() {
         RandomWalk rw = new RandomWalk();
@@ -42,6 +46,7 @@ public class RandomWalkTest {
 
     /**
      */
+    @Category(NotReadyTests.class)
     @Test
     public void testMove3() {
         RandomWalk rw = new RandomWalk();
@@ -58,6 +63,7 @@ public class RandomWalkTest {
 
     /**
      */
+    @Category(NotReadyTests.class)
     @Test
     public void testRandomWalk() {
         RandomWalk rw = new RandomWalk();

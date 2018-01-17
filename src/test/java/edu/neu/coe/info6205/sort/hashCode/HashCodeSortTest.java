@@ -4,13 +4,11 @@
 
 package edu.neu.coe.info6205.sort.hashCode;
 
-import edu.neu.coe.info6205.equable.ComparableEquable;
+import edu.neu.coe.info6205.NotReadyTests;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
-import java.time.Instant;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -88,6 +86,7 @@ public class HashCodeSortTest {
             return 0;
         }
     }
+    @Category(NotReadyTests.class)
     @Test
     public void sort() throws Exception {
         final Date d1 = new Date(2017, 12, 10, 11, 30, 05, 723);

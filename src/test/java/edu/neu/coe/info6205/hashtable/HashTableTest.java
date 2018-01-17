@@ -4,10 +4,12 @@
 
 package edu.neu.coe.info6205.hashtable;
 
+import edu.neu.coe.info6205.NotReadyTests;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import static org.junit.Assert.*;
-
+@Category(NotReadyTests.class)
 public class HashTableTest {
     @Test public void testHashTable0() {
         final HashTable hashTable = new HashTable(2);

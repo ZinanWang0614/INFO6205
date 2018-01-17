@@ -4,7 +4,9 @@
 
 package edu.neu.coe.info6205.bqs;
 
+import edu.neu.coe.info6205.NotReadyTests;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import static org.junit.Assert.*;
 import java.util.Iterator;
@@ -20,7 +22,7 @@ public class DListTest {
         assertFalse(list.iterator().hasNext());
         assertTrue(list.isEmpty());
     }
-
+    @Category(NotReadyTests.class)
     @Test
     public void testDList1() {
         DList<Integer> list = new DList<>();
@@ -31,7 +33,7 @@ public class DListTest {
         assertTrue(items.hasNext());
         assertEquals(items.next(), new Integer(1));
     }
-
+    @Category(NotReadyTests.class)
     @Test
     public void testDList2() {
         DList<Integer> list = new DList<>(1);
@@ -41,7 +43,7 @@ public class DListTest {
         assertTrue(items.hasNext());
         assertEquals(items.next(), new Integer(1));
     }
-
+    @Category(NotReadyTests.class)
     @Test
     public void testDList3() {
         DList<Integer> list = new DList<>();
@@ -53,12 +55,14 @@ public class DListTest {
         list.remove(first);
         assertEquals(list.size(),0);
     }
+    @Category(NotReadyTests.class)
     @Test
     public void testDList4() throws BQSException {
         DList<Integer> list = new DList<>(1);
         list.remove(1);
         assertTrue(list.isEmpty());
     }
+    @Category(NotReadyTests.class)
     @Test
     public void testDList5() {
         DList<Integer> list = new DList<>();
@@ -70,6 +74,7 @@ public class DListTest {
         assertEquals(list.toString(),"1, 2, ");
         assertEquals(list.size(),2);
     }
+    @Category(NotReadyTests.class)
     @Test
     public void testDList6() {
         DList<Integer> list = new DList<>();
@@ -81,6 +86,7 @@ public class DListTest {
         assertEquals(list.toString(),"1, 2, ");
         assertEquals(list.size(),2);
     }
+    @Category(NotReadyTests.class)
     @Test
     public void testDList7() throws BQSException {
         DList<Integer> list = new DList<>(1);

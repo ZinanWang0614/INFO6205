@@ -4,8 +4,9 @@
 
 package edu.neu.coe.info6205.union_find;
 
-import edu.neu.coe.info6205.randomwalk.RandomWalk;
+import edu.neu.coe.info6205.NotReadyTests;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -23,6 +24,7 @@ public class HWQUPCTest {
 
     /**
      */
+    @Category(NotReadyTests.class)
     @Test
     public void testFind1() {
         HWQUPC h = new HWQUPC(10);
@@ -34,6 +36,7 @@ public class HWQUPCTest {
 
     /**
      */
+    @Category(NotReadyTests.class)
     @Test
     public void testFind2() {
         HWQUPC h = new HWQUPC(10);
@@ -50,6 +53,7 @@ public class HWQUPCTest {
 
     /**
      */
+    @Category(NotReadyTests.class)
     @Test
     public void testFind3() {
         HWQUPC h = new HWQUPC(10);
@@ -78,6 +82,7 @@ public class HWQUPCTest {
 
     /**
      */
+    @Category(NotReadyTests.class)
     @Test
     public void testFind4() {
         HWQUPC h = new HWQUPC(10);
